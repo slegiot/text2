@@ -1,0 +1,20 @@
+name: Push to Replicate
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  push:
+    runs-on: ubuntu-latest-16-cores
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Push model to Replicate
+        uses: replicate/setup-cog@v2
+        with:
+          token: ${{ secrets.REPLICATE_API_TOKEN }}
+
+      - run: cog push r8.im/slegiot/subtitle-translator
