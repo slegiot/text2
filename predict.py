@@ -46,7 +46,7 @@ class Predictor(BasePredictor):
                 os.makedirs(os.path.dirname(w["path"]), exist_ok=True)
                 print(f"[setup] Downloading {os.path.basename(w['path'])}...")
                 subprocess.run(
-                    ["python3", "-m", "gdown", w["gdrive_id"], "-O", w["path"]],
+                    ["gdown", w["gdrive_id"], "-O", w["path"]],
                     check=True,
                 )
 
