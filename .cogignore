@@ -1,0 +1,16 @@
+.git
+__pycache__
+*.pyc
+*.mp4
+*.mp3
+*.avi
+*.mov
+output_*
+EraseSubtitles/Input/Video/*
+EraseSubtitles/Input/Audio/*
+EraseSubtitles/Output/*
+EraseSubtitles/.git
+EraseSubtitles/Documents
+*.egg-info
+.venv
+node_modules

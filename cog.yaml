@@ -1,0 +1,27 @@
+# Configuration for Cog ⚙️
+# Reference: https://cog.run/yaml
+
+build:
+  gpu: true
+  cuda: "11.8"
+  python_version: "3.10"
+  system_packages:
+    - "ffmpeg"
+    - "libgl1-mesa-glx"
+    - "libglib2.0-0"
+  python_packages:
+    - "torch==2.1.2"
+    - "torchvision==0.16.2"
+    - "numpy==1.26.4"
+    - "opencv-python-headless==4.9.0.80"
+    - "moviepy==1.0.3"
+    - "Pillow==10.2.0"
+    - "requests==2.31.0"
+    - "deep-translator==1.11.4"
+    - "scipy==1.12.0"
+    - "gdown==5.1.0"
+    - "mmcv==2.1.0"
+    - "mmengine==0.10.3"
+    - "tqdm"
+
+predict: "predict.py:Predictor"

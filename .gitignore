@@ -1,0 +1,37 @@
+# Videos and media
+*.mp4
+*.mp3
+*.avi
+*.mov
+*.mkv
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.venv/
+venv/
+
+# Model weights (too large for git, download at runtime)
+EraseSubtitles/E2FGVI/release_model/*.pth
+EraseSubtitles/text_detection/weights/*.pth
+
+# CRAFT weights
+EraseSubtitles/text_detection/weights/*.pth
+
+# EraseSubtitles runtime directories
+EraseSubtitles/Input/Video/*
+EraseSubtitles/Input/Audio/*
+EraseSubtitles/Output/*
+
+# Docker
+.cog/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
